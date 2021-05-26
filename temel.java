@@ -4,7 +4,7 @@ public class b {
      }
 }
 
-----------------------------------------------
+// ----------------------------------------------
 public class b { 
  public static void main(String[] args){
   int a=5;
@@ -14,7 +14,7 @@ public class b {
   System.out.println("toplam=" + c); //yorum /* çoklu yorum */
   }
 }
-----------------------------------------------
+// ----------------------------------------------
 public class b{
  public static void main(String[] args){
     // int tam sayı 
@@ -24,14 +24,14 @@ public class b{
     // byte --> short --> int --> long
     }
 }
-------------------------------------------------
+// ------------------------------------------------
 public class b{
   public static void main(String[] args){
         // double 64bit ondalıklı sayı
         // float a=2.5f;  32bit
   }
 }
------------------------------------------------
+// -----------------------------------------------
 public class b{ 
   public static void main(String[] args){
       // char: karakter göstermek için. 2^16 tane karakter simgeler. 2 byte yer kaplar. unicoode number. 
@@ -39,13 +39,13 @@ public class b{
        
   }
 }
--------------------------------------------------
+// -------------------------------------------------
 public class b{
   public static void main(String[] args){
       // String, ilkel olmayan veri tipi.
   }
 }
-----------------------------------------------------
+// ----------------------------------------------------
 public class b{
   public static void main(String[] args){
     Scanner scanner=new Scanner(System.in);
@@ -60,7 +60,7 @@ public class b{
     } else{...}
   }
 }
------------------------------------------------------
+// -----------------------------------------------------
 public class b{
   public static void main(String[] args){
    Scanner scanner=new Scanner(System.in);
@@ -70,7 +70,7 @@ public class b{
       // intten sonra line istenildiği zaman hata verir.
  }
 }
----------------------------------------------------------
+// ---------------------------------------------------------
 // Beden kitle indeksi hesaplama.
   public class b{
    public static void main(Sting[] args){ 
@@ -87,7 +87,7 @@ public class b{
      System.out.print("toplam=" + indeks);
  }
 }
--------------------------------------------------------------
+// -------------------------------------------------------------
 // Kilometre basına tutar hesaplama.
 public class b{
  public static void main(String[] args){
@@ -120,7 +120,7 @@ public class b{
     System.out.print("Hipotenüs:" + hipo);
  }
 }
-------------------------------------------------------------
+// ------------------------------------------------------------
 // Mantiksal Operator.
  public class b{
   public static void main(String[] args){
@@ -129,7 +129,7 @@ public class b{
   // ! --> NOT operatoru
  }
 }
--------------------------------------------------------------
+// -------------------------------------------------------------
 // Kullanıcıdan alınan 3 sayıdan en büyüğünü bulma.
  public class b{
   public static void main (String[] args){
@@ -156,7 +156,7 @@ public class b{
          System.out.print("En büyük sayı:" +maks);
  }
 }
-------------------------------------------------------
+// ------------------------------------------------------
 // Koşullarla beden kitle indeksi hesaplama.
 public class b{
    public static void main(Sting[] args){ 
@@ -184,7 +184,7 @@ public class b{
     }
   }
 }
------------------------------------------------------------------
+// -----------------------------------------------------------------
 // Basit hesap makinesi.
  public class b{
   public static void main(String[] args){
@@ -233,7 +233,7 @@ public class b{
   }
  }
 }
-------------------------------------------------------------
+// ------------------------------------------------------------
 // Gelismis not hesaplama.
  public class b{
   public static void main(String[] args){
@@ -265,7 +265,7 @@ public class b{
        else{System.out.print("FF");}
  } 
 }
-------------------------------------------------------------------
+// ------------------------------------------------------------------
 public class b{ 
  public static void main(String[] args){ 
       // for(baslatma;kosul;arttırma veya azaltma)
@@ -284,7 +284,7 @@ public class b{
      
  }
 }
----------------------------------------------------------------
+// ---------------------------------------------------------------
 public class b{
  public static void main(String[] args){
     // while(koşul)
@@ -305,7 +305,7 @@ public class b{
       System.out.print("Faktoriyel="+fakt);
  }
 }
----------------------------------------------------------------
+// ---------------------------------------------------------------
 public class b{
   public static void man(String[] args)
     /* do{ 
@@ -323,7 +323,7 @@ public class b{
      
  }
 }
------------------------------------------------------------------
+// -----------------------------------------------------------------
 public class b{
   public static void main(String[] args)
     // break: döngüyü sonlandırır. sadece içinde bulundugu döngüde sonlandırır.
@@ -331,7 +331,7 @@ public class b{
 
  }
 }
--------------------------------------------------------------------
+// -------------------------------------------------------------------
 // ATM örneği.
 public class b{
   public static void main(String[] args)
@@ -380,7 +380,7 @@ public class b{
   }
  }
 }
-------------------------------------------------------------------
+// ------------------------------------------------------------------
 // Armstrong sayı bulma.
   public class b{
    public static void main(String[] args){
