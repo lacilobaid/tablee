@@ -459,3 +459,23 @@ public class b {
     }
 }
 ------------------------------------------------------------------
+    // Faiz oranı hesaplama.
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class b {
+    public static void main(String[] args) {
+       Scanner scanner=new Scanner(System.in);
+        System.out.print("Anapara miktarını giriniz: ");
+        int anapara = scanner.nextInt();
+        System.out.print("Vade yıl sayısı girin: ");
+        int yil = scanner.nextInt();
+        double faiz = 0.06;
+        double toplam = anapara;
+        for (int i=1 ; i<=yil ; i++){
+            toplam = toplam+(toplam*faiz);
+            System.out.println(i+ ".yil sonunda paranız "+(int)toplam);
+        }
+
+     }
+}
+
