@@ -478,4 +478,183 @@ public class b {
 
      }
 }
+-------------------------------------------------------------------
+    //Method
+//Returndan sonra hiçbir kod calısmaz.
+//Return
+public class b{
+ public static void int ikiilecarp(int a){
+       return a*2;
+} public static void int ikiiletopla(int a){
+       return a+2;
+} public static void int dortilecarp(int a){
+       return a*4;
+}
+ public static void main (String[] args){
+   System.out.println("Cıktı değer: "+ dortilecarp(ikiiletopla(ikiilecarp(8))));
 
+ }
+}
+--------------------------------------------
+// Overloading - birden fazla şekilde çağırmak.
+public class b{
+ public static void toplama(int a, int b){
+  System.out.println("Toplamları: "+ (a+b));
+}public static void toplama(int a, int b, int c){
+  System.out.println("Toplamları: "+ (a+b+c));
+}public static void toplama(String a, String b){
+  System.out.println(a+" "+ b);
+}
+ public static void main(String[] args){
+   toplama(3,4,5);
+   toplama(2,3);
+   toplama("seyma","goktas");
+ }
+}
+--------------------------------------------
+//1den 1000e asal olan sayılar.
+public class b {
+    public static boolean asal(int sayi) {
+        for (int i = 2; i < sayi; i++) {
+
+            if (sayi % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+        public static void main (String[]args){
+            for (int i = 2; i < 1000; i++) {
+                if (asal(i)) {
+                    System.out.println(i);
+                }
+            }
+        }
+    }
+-------------------------------------------------
+//Kullanıcıdan alınan iki sayının ebobu.
+
+public class b {
+        public static int Ebob(int sayi1, int sayi2) {
+          int ebob=1;
+          for(int i=1 ; i <= sayi1 && i <= sayi2 ; i++ ){
+           if((sayi1 % i ==0 )&& (sayi2%i==0)){
+                  ebob=i;
+           }
+          }
+          return ebob;
+        }
+        public static void main (String[]args) {
+         Scanner scanner=new Scanner(System.in);
+            System.out.println("Sayı girin: ");
+         int a=scanner.nextInt();
+            System.out.println("Sayı girin: ");
+         int b=scanner.nextInt();
+            System.out.println("iki sayının ebobu: "+Ebob(a,b));
+        }
+   }
+-----------------------------------------------------------
+// Overloading ile hesap makinesi.
+import java.sql.SQLOutput;
+import java.util.Scanner;
+
+public class b {
+       public static int toplama (int a, int b){
+           return (a+b);
+       }public static int cikarma (int a, int b){
+        return (a-b);
+       }public static int carpma (int a, int b){
+        return (a*b);
+       }public static double bolme(int a, int b){
+        return ((double)a/b);
+       }public static int toplama (int a, int b, int c){
+        return (a+b+c);
+        }public static int carpma (int a, int b, int c){
+        return (a*b*c);
+    }
+        public static void main (String[]args) {
+           Scanner scanner=new Scanner(System.in);
+           String islemler= "1.Toplama\n"+
+                            "2.Cıkarma\n"+
+                            "3.Carpma\n"+
+                            "4.Bolme\n"+
+                            "Cıkıs için x'e basın";
+            System.out.println(islemler);
+
+            while(true) {
+                System.out.println("İslem seciniz...");
+                String islem = scanner.nextLine();
+                if (islem.equals("x")) {
+                    System.out.println("Program sonlandırıldı...");
+                    break;
+                } else if (islem.equals("1")) {
+                    System.out.println("kac sayılı islem gerceklesecek? (2 ya da 3)");
+                    int secim = scanner.nextInt();
+                     if (secim == 2) {
+                        System.out.println("a değeri giriniz...");
+                        int a = scanner.nextInt();
+                        System.out.println("b değeri giriniz...");
+                        int b = scanner.nextInt();
+                        scanner.nextLine();
+
+                        System.out.println("Girilen sayıların toplamı " + toplama(a, b));
+                     }  else if (secim == 3) {
+                        System.out.println("a değeri giriniz...");
+                        int a = scanner.nextInt();
+                        System.out.println("b değeri giriniz...");
+                        int b = scanner.nextInt();
+                        System.out.println("c değeri giriniz...");
+                        int c = scanner.nextInt();
+
+                        scanner.nextLine();
+
+                        System.out.println("Girilen sayıların toplamı " + toplama(a, b, c));
+                     } else {
+                        System.out.println("Boyle bir sey yok...");
+                    }
+
+                } else if (islem.equals("2")) {
+                    System.out.println("a değeri giriniz...");
+                    int a = scanner.nextInt();
+                    System.out.println("b değeri giriniz...");
+                    int b = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Girilen sayıların farkları " + cikarma(a, b));
+                } else if (islem.equals("3")) {
+                    System.out.println("kac sayılı islem gerceklesecek? (2 ya da 3)");
+                    int secim = scanner.nextInt();
+                     if (secim == 2) {
+                        System.out.println("a değeri giriniz...");
+                        int a = scanner.nextInt();
+                        System.out.println("b değeri giriniz...");
+                        int b = scanner.nextInt();
+                        scanner.nextLine();
+
+                        System.out.println("Girilen sayıların carpımları " + carpma(a, b));
+                     } else if (secim == 3) {
+                        System.out.println("a değeri giriniz...");
+                        int a = scanner.nextInt();
+                        System.out.println("b değeri giriniz...");
+                        int b = scanner.nextInt();
+                        System.out.println("c değeri giriniz...");
+                        int c = scanner.nextInt();
+
+                        scanner.nextLine();
+
+                        System.out.println("Girilen sayıların carpımları " + carpma(a, b, c));
+                    }
+                } else if (islem.equals("4")) {
+                    System.out.println("a değeri giriniz...");
+                    int a = scanner.nextInt();
+                    System.out.println("b değeri giriniz...");
+                    int b = scanner.nextInt();
+                    scanner.nextLine();
+
+                    System.out.println("Girilen sayıların bölümleri " + bolme(a, b));
+                }else{
+                    System.out.println("gecersiz islem");
+                }
+            }
+       }
+   }
